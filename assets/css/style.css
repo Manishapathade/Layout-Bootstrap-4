@@ -32,11 +32,21 @@
     border-bottom: 4px solid var(--color-primary);
 }
 
+.mainSlider .carousel-inner,
+.mainSlider .carousel-item,
+.mainSlider .carousel-item >img{
+    height: 400px;
+}
 
+.mainSlider .carousel-item >img{
+    object-fit: cover;
+}
 
-
-
-
+.mainSlider .carousel-caption{
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
 
 
 
