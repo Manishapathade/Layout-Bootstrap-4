@@ -101,3 +101,10 @@
     height: 300px;
     object-fit: cover;
 }
+
+
+
+.footer{
+    background-color: var( --color-dark);
+    
+}
