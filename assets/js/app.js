@@ -1,23 +1,23 @@
 const cl = console.log;
 
-const toggleBtn = document.getElementById('toggleBtn');
 
+// owl-carousel vr jaun functionality dyaycya 
 
-
-
-
-const onNavbarToggle = (eve) =>{
-    // cl(eve.target)
-    eve.target.classList.toggle("fa-xmark")
-    eve.target.classList.toggle("fa-bars")
-
-}
-
-
-
-
-
-
-
-
-toggleBtn.addEventListener('click', onNavbarToggle)
+$('#testimonialsCarousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    // navtext: [ethe icon pn taku shukkte 2 single cot kiva double cot madhe]
+    // autopay:true, timing sathi 
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
